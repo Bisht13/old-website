@@ -1,0 +1,250 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url('Utils/bgimage.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-top: -21px;
+    margin-bottom: 0px;
+    margin-inline: 0px;
+    width: 100%;
+}
+
+#front {
+    background-color: rgba(40, 195, 247, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 10.2em;
+    }
+}
+  
+@keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+}
+  
+.text_1 {
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+    background-color: rgb(9, 56, 100);
+    padding: 10px;
+    font-size: 3rem;
+}
+  
+  
+.text_1::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0e1829;
+    z-index: 2;
+}
+
+#navbar li{
+    float: inline-start;
+}
+
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    }
+
+#navbar li a:hover {
+    background-color: #111111;
+}
+
+.lists {
+    background-color: #196ba7;
+    padding: 3em;
+    margin-inline: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lists .card{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 0px 10px 5px #00374d;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lists .card img{
+    max-width: 100%;
+    max-height: 100%;
+    visibility: visible;
+}
+
+.pic .imgtext {		
+    color: white;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    padding-inline: 15px;
+    position: absolute;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.pic {
+    position: relative;
+    overflow: hidden;
+}
+.pic:hover img {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+    transform: scale(1.08);
+}
+.pic .imgtext:hover {
+    -webkit-opacity: 40;
+    opacity: 40;
+}
+
+.bgcontent {
+    background-color: #ffffff;
+    margin-bottom: -8px;
+}
+ 
+  .flex-item {
+    flex: 30%;
+  }
+  
+  @media (max-width: 800px) {
+    .flex-item{
+      flex: 100%;
+    }
+  }
+
+.intro {
+    width: 100%;
+    background-color: rgb(162, 187, 209);
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.introtext {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-inline: 80px;
+}
+
+.intro-heading {
+    size: 50px;
+    color: #0e1829;;
+}
+
+.intro-body {
+    color: #425575;;
+}
+
+.intro-ps {
+    color: #577ab1;;
+}
+
+.selfimage {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.footer {
+    width: 100%;
+    background-color: #0e1829;
+    display: flex;
+    justify-content: center;
+    min-height: 300px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.get-in-touch {
+    margin-left: -10%;
+    margin-top: 2%;
+}
+
+.footer-heading {
+    size: 50px;
+    color: rgb(162, 187, 209);
+}
+
+.footer-body {
+    color: rgb(76, 102, 126);
+}
+
+.email {
+    color: rgb(162, 187, 209)
+}
+
+.e-id {
+    color: rgb(103, 178, 243);
+}
+
+.bottom {
+    line-break: strict;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e1829;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10;
+    margin-top: -10;
+}
+
+.icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 10px;
+    margin: 10px;
+}
