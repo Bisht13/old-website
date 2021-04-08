@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-image: url('Utils/bgimage.png');
@@ -23,7 +27,7 @@ body {
       width: 0;
     }
     20%, 80% {
-      width: 10.2em;
+      width: 8.25em;
     }
 }
   
@@ -48,7 +52,7 @@ body {
     animation-iteration-count: infinite;
     background-color: rgb(9, 56, 100);
     padding: 10px;
-    font-size: 3rem;
+    font-size: 4vmax;
 }
   
   
@@ -61,31 +65,41 @@ body {
     animation-timing-function: steps(1, end);
 }
 
-.navbar {
+#navbar {
     list-style-type: none;
     margin: 0;
-    position: relative;
+    position: sticky;
     top: 0;
     padding: 0;
     overflow: hidden;
     background-color: #0e1829;
     z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
-.navbar li{
-    display: inline;
+#navbar li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: inline-start;
 }
 
-.navbar li a {
-    display: block;
+#navbar li a {
+    display: flex;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-decoration: none;
     }
 
-.navbar li a:hover {
-    background-color: #111111;
+#navbar li a:hover {
+    background-color: rgb(162, 187, 209);
+    padding-inline: 200%;
+    color: #0e1829;
 }
 
 .lists {
@@ -148,7 +162,6 @@ body {
 .bgcontent {
     background-color: #ffffff;
     margin-bottom: -8px;
-    width: 100%;
 }
  
   .flex-item {
@@ -166,9 +179,15 @@ body {
     background-color: rgb(162, 187, 209);
     display: flex;
     justify-content: center;
-    min-height: 300px;
+    min-height: 400px;
     font-weight: bold;
     letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+    .intro {
+      flex-direction: column;
+    }
 }
 
 .introtext {
@@ -196,6 +215,14 @@ body {
     display: flex;
     justify-content: right;
     flex-direction: column;
+    align-items: center;
+}
+
+.selfimage img{
+    width: auto;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
 }
 
 .footer {
@@ -206,11 +233,13 @@ body {
     min-height: 300px;
     font-weight: bold;
     letter-spacing: 1px;
+    flex-direction: column;
 }
 
 .get-in-touch {
-    margin-left: -10%;
-    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 15%;
 }
 
 .footer-heading {
@@ -231,21 +260,18 @@ body {
 }
 
 .bottom {
-    line-break: strict;
     bottom: 0;
     width: 100%;
     background-color: #0e1829;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 10;
-    margin-top: -10;
+    padding-top: 10;
 }
 
-.icon a {
+.icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding-inline: 10px;
     margin: 10px;
 }
