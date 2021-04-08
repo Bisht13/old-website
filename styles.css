@@ -61,7 +61,7 @@ body {
     animation-timing-function: steps(1, end);
 }
 
-#navbar {
+.navbar {
     list-style-type: none;
     margin: 0;
     position: sticky;
@@ -72,11 +72,11 @@ body {
     z-index: 2;
 }
 
-#navbar li{
-    float: inline-start;
+.navbar li{
+    display: inline;
 }
 
-#navbar li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -84,7 +84,7 @@ body {
     text-decoration: none;
     }
 
-#navbar li a:hover {
+.navbar li a:hover {
     background-color: #111111;
 }
 
@@ -148,6 +148,7 @@ body {
 .bgcontent {
     background-color: #ffffff;
     margin-bottom: -8px;
+    width: 100%;
 }
  
   .flex-item {
