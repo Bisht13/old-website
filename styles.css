@@ -91,6 +91,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	float: inline-start;
+    font-weight: bold;
 }
 
 #navbar li a {
@@ -100,12 +101,6 @@ body {
 	padding-top: 16px;
 	padding-bottom: 16px;
 	text-decoration: none;
-}
-
-#navbar li a:hover {
-	background-color: rgb(162, 187, 209);
-	padding-inline: 5vmax;
-	color: #0e1829;
 }
 
 .lists {
